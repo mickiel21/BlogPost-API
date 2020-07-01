@@ -16,6 +16,15 @@ class Category extends Model
         'name'
     ];
 
+    /**
+     * Relationship: belongs to many post
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\hasMany
+     */
+    public function posts()
+    {
+        return $this->hasMany('App\Post');
+    }
     
 
 }
