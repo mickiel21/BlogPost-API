@@ -27,7 +27,8 @@ class PostController extends Controller
     public function index()
     {
        $posts = Post::all();
-       return $this->successResponse($posts);
+       return $this->successResponse($posts); 
+       
     }
 
      /**
