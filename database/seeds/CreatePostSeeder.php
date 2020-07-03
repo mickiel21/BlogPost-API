@@ -18,5 +18,6 @@ class CreatePostSeeder extends Seeder
             'title'=> 'Post Number One',
             'body'=> 'Laravel is my favorite',
         ]);
+        factory(App\Post::class, 10)->create();
     }
 }

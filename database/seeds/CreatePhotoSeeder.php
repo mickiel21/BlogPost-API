@@ -14,5 +14,6 @@ class CreatePhotoSeeder extends Seeder
         Photo::create([
             'file' => 'sample.jpg',
         ]);
+        factory(App\Photo::class, 10)->create();
     }
 }
